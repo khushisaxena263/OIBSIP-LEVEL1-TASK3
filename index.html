@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body"> 
+       <h1>TEMPERATURE CONVERTOR</h1>
+    <div class="form">
+        <form id="tempcalcu" onsubmit="calculatetemp(); return false" >
+            <label for="temp">Enter The Temperature</label><br/>
+            <input class="inputs" type="number" name="temp" id="temp">
+            <select name="temdiff" id="tempdiff">
+                <option value="cel">Celcius</option>
+                <option value="feh">Fehrenheit</option>
+            </select><br/>
+            <button name="tems" type="submit">Calculate</button>
+            <button onclick='clear_inputs()'>Clear</button><br/><br/>
+            <span class="inputs" id="resultContain"></span>
+        </form>
+    </div>
+
+</body>
+<script src="script.js">
+
+</script>
+</html>
